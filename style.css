@@ -1,3 +1,7 @@
+* {
+  cursor: url('public/cursor.cur'), auto;
+}
+
 .alpha-box {
   align-items: center;
   background-color: white;
@@ -20,4 +24,3 @@ body {
   text-align: center;
   background-color: bisque;
 }
-
