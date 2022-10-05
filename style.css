@@ -1,0 +1,23 @@
+.alpha-box {
+  align-items: center;
+  background-color: white;
+  border-style: solid;
+  display: flex;
+  font-size: 12vw;
+  height: 15vw;
+  justify-content: center;
+  margin: 5%;
+  width: 15vw;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+body {
+  text-align: center;
+  background-color: bisque;
+}
+
