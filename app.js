@@ -5,8 +5,15 @@ let counter = 0
 
 const makeAlphaBoxes = (guess) => {
 
-  guesses.splice(counter, 1, guess)
-  counter++
+  if(counter < 5) {
+
+    guesses.splice(counter, 1, guess)
+    counter++
+  } else {
+    counter = 0
+    guesses.splice(counter, 1, guess)
+    counter++
+  }
   
   guesses.forEach((letter, i) => {
     
