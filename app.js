@@ -500,6 +500,7 @@ let words = [
 
 let boxes = document.querySelectorAll('.box')
 let container = document.querySelector('.container')
+let message = document.querySelector('.message')
 let guesses = ['', '', '', '', '']
 let counter = 0
 
@@ -532,6 +533,7 @@ const checkWinner = () =>{
     let userInput = guesses.toString().replaceAll(',', '').toLowerCase()
     if(words.includes(userInput)) {
       console.log(`Congrats! ${userInput} is correct!`)
+      message.innerHTML = `Congrats! ${userInput} is correct!`
     }
   }
 }
