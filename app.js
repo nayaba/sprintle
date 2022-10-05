@@ -22,8 +22,5 @@ const makeAlphaBoxes = (guess) => {
 
 
 document.addEventListener('keydown',(e) => {
-  let keyCode = e.keyCode
-  let chr = String.fromCharCode(keyCode)
-  console.log(chr)
-  makeAlphaBoxes(chr)
+ makeAlphaBoxes(e.key.toUpperCase())
 } )
